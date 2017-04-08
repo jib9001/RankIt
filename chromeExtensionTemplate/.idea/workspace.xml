@@ -12,18 +12,38 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AddSite" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AddSite">
+      <file leaf-file-name="UpVote.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/UpVote.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+            <state relative-caret-position="317">
+              <caret line="36" column="9" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="36" selection-end-column="9" />
               <folding>
-                <element signature="e#7#143#0#PHP" expanded="true" />
-                <marker date="1491686423404" expanded="true" signature="304:337" ph="INSERT INTO t_site... " />
-                <marker date="1491686423404" expanded="true" signature="304:339" ph="INSERT INTO t_site... " />
-                <marker date="1491686423404" expanded="true" signature="304:340" ph="INSERT INTO t_site... " />
-                <marker date="1491686423404" expanded="true" signature="304:350" ph="INSERT INTO t_site... " />
-                <marker date="1491686423404" expanded="true" signature="304:353" ph="INSERT INTO t_site... " />
+                <marker date="1491694333833" expanded="true" signature="351:391" ph="SELECT SiteI... t_site" />
+                <marker date="1491694333833" expanded="true" signature="351:392" ph="SELECT SiteI... t_site" />
+                <marker date="1491694333833" expanded="true" signature="351:393" ph="SELECT SiteI... t_site" />
+                <marker date="1491694333833" expanded="true" signature="351:409" ph="SELECT SiteI... t_site" />
+                <marker date="1491694333833" expanded="true" signature="351:410" ph="SELECT SiteI... t_site" />
+                <marker date="1491694333833" expanded="true" signature="742:821" ph="INSERT INTO t_site... " />
+                <marker date="1491694333833" expanded="true" signature="942:983" ph="SELECT UpVot... t_site" />
+                <marker date="1491694333833" expanded="true" signature="942:984" ph="SELECT UpVot... t_site" />
+                <marker date="1491694333833" expanded="true" signature="1167:1194" ph="UPDATE t_sit... " />
+                <marker date="1491694333833" expanded="true" signature="1167:1195" ph="UPDATE t_sit... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetScore.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/GetScore.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="487">
+              <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+              <folding>
+                <element signature="e#6#87#0#PHP" expanded="true" />
+                <marker date="1491695879355" expanded="true" signature="308:366" ph="SELECT SiteI... t_site" />
+                <marker date="1491695879355" expanded="true" signature="698:777" ph="INSERT INTO t_site... " />
+                <marker date="1491695879355" expanded="true" signature="900:952" ph="SELECT UpVot... t_site" />
+                <marker date="1491695879355" expanded="true" signature="900:953" ph="SELECT UpVot... t_site" />
               </folding>
             </state>
           </provider>
@@ -35,6 +55,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/AddSite" />
+        <option value="$PROJECT_DIR$/UpVote.php" />
+        <option value="$PROJECT_DIR$/server/AddSite" />
+        <option value="$PROJECT_DIR$/server/UpVote.php" />
+        <option value="$PROJECT_DIR$/server/GetScore.php" />
       </list>
     </option>
   </component>
@@ -79,6 +103,20 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chromeExtensionTemplate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chromeExtensionTemplate" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -86,6 +124,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="E:/NonWindowsBoot/FallSemester2016/JavaScript/tellepjc_FinalAssignment" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\Connor\Documents\GitHub\New folder\RankIt\chromeExtensionTemplate\server" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -98,6 +142,69 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -114,7 +221,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2113000" />
+    <option name="totallyTimeSpent" value="9730000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1374" height="739" extended-state="6" />
@@ -150,17 +257,51 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/AddSite">
+    <entry file="file://$PROJECT_DIR$/server/AddSite">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/AddSite">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/UpVote.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="36" column="9" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="36" selection-end-column="9" />
           <folding>
-            <element signature="e#7#143#0#PHP" expanded="true" />
-            <marker date="1491686423404" expanded="true" signature="304:337" ph="INSERT INTO t_site... " />
-            <marker date="1491686423404" expanded="true" signature="304:339" ph="INSERT INTO t_site... " />
-            <marker date="1491686423404" expanded="true" signature="304:340" ph="INSERT INTO t_site... " />
-            <marker date="1491686423404" expanded="true" signature="304:350" ph="INSERT INTO t_site... " />
-            <marker date="1491686423404" expanded="true" signature="304:353" ph="INSERT INTO t_site... " />
+            <marker date="1491694333833" expanded="true" signature="351:391" ph="SELECT SiteI... t_site" />
+            <marker date="1491694333833" expanded="true" signature="351:392" ph="SELECT SiteI... t_site" />
+            <marker date="1491694333833" expanded="true" signature="351:393" ph="SELECT SiteI... t_site" />
+            <marker date="1491694333833" expanded="true" signature="351:409" ph="SELECT SiteI... t_site" />
+            <marker date="1491694333833" expanded="true" signature="351:410" ph="SELECT SiteI... t_site" />
+            <marker date="1491694333833" expanded="true" signature="742:821" ph="INSERT INTO t_site... " />
+            <marker date="1491694333833" expanded="true" signature="942:983" ph="SELECT UpVot... t_site" />
+            <marker date="1491694333833" expanded="true" signature="942:984" ph="SELECT UpVot... t_site" />
+            <marker date="1491694333833" expanded="true" signature="1167:1194" ph="UPDATE t_sit... " />
+            <marker date="1491694333833" expanded="true" signature="1167:1195" ph="UPDATE t_sit... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/GetScore.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="true" />
+            <marker date="1491695879355" expanded="true" signature="308:366" ph="SELECT SiteI... t_site" />
+            <marker date="1491695879355" expanded="true" signature="698:777" ph="INSERT INTO t_site... " />
+            <marker date="1491695879355" expanded="true" signature="900:952" ph="SELECT UpVot... t_site" />
+            <marker date="1491695879355" expanded="true" signature="900:953" ph="SELECT UpVot... t_site" />
           </folding>
         </state>
       </provider>
