@@ -1,0 +1,78 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+body{
+  background: url('materialBackground.jpg');
+}
+nav {
+  padding-top: 1em;
+  padding-left: .5em;
+  padding-bottom: 1em;
+}
+nav a:link{
+  color: black;
+  font-size: 1.5em;
+  font-family: "Roboto", regular, sans-serif;
+  text-decoration: none;
+  padding: 5px;
+  background-color: #E3F2FD;
+}
+nav a:visited{
+  color: black;
+  font-family: "Roboto", regular, sans-serif;
+  text-decoration: none;
+  padding: 5px;
+  background-color: #90CAF9;
+}
+nav a:hover{
+  color: black 50%;
+  font-family: "Roboto", regular, sans-serif;
+  text-decoration: none;
+  padding: 4px;
+  background-color: #BBDEFB;
+}
+h1{
+  padding-left: 14px;
+  padding-top: 24px;
+  font-family: "Roboto", regular, sans-serif;
+}
+li{
+  display: inline-block;
+  padding-left: 10px;
+
+}
+ul {
+  display: inline-block;
+  list-style-type: none;
+}
+span{
+  display: inline;
+}
+#wrapper{
+  background-color: white;
+  margin: auto;
+  width: 80%;
+  min-height: 100vh;
+}
+#navbar{
+  margin: auto;
+  width: 100%;
+  height: 60px;
+}
+.circlebase{
+  clear: right;
+  vertical-align: middle;
+  line-height: 30px;
+  color: white;
+  text-align: center;
+  display: block;
+  border-radius: 24px;
+  background-color: #64B5F6;
+  width: 30px;
+  height: 30px;
+  margin-left: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-right: 8px;
+}
