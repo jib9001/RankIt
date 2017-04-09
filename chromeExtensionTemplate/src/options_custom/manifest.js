@@ -2,6 +2,9 @@
 this.manifest = {
     "name": "My Extension",
     "icon": "icon.png",
+    "content_scripts": [ {
+        "run_at":    "document_start"
+    } ],
     "settings": [
         {
             "tab": i18n.get("information"),

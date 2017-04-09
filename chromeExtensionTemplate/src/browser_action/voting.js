@@ -48,18 +48,20 @@ function boolToInt(booleanVar) {
 }
 
 function getScore(){
-  var xhttp = new XMLHttpResponse();
-  xhttp.open("GET","http://phenom.servegame.com/RankIt/GetScore.php?domain"+getDomain(),true);
+  var domain = getDomain();
+  var xhttp = new XMLHttpRequest();
+  xhttp.open("GET","http://phenom.servegame.com/RankIt/GetScore.php?domain=" + window.location.hostname,true);
   xhttp.onreadystatechange=function(){
-    document.getElementById('test').innerHTML= xhttp.responseText;
+    console.log(xhttp.responseText);
   };
   xhttp.send();
 }
 
 function getDomain(){
-  return window.domain.hostname;
+  return window.location.hostname;
 }
 
 window.onload = function(){
+  alert("loaded");
   getScore();
 }
