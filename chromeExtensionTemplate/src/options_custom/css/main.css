@@ -130,15 +130,3 @@ body.measuring .tab-content, body.measuring #search-result-container {
     opacity: 0;
     overflow: hidden;
 }
-
-#box{
-  height: 75px;
-  width: 100px;
-  background-color: #3F51B5;
-}
-
-.box{
-  height: 75px;
-  width: 100px;
-  background-color: #3F51B5;
-}
