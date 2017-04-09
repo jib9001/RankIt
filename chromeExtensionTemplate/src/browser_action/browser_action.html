@@ -3,10 +3,14 @@
 	#mainPopup {
 		padding: 10px;
 		height: 50px;
-		width: 200px;
+		width: 250px;
 		font-family: Helvetica, Ubuntu, Arial, sans-serif;
 	}
 	#container {
+	}
+	#houseButton{
+		display: inline-block;
+		float:right;
 	}
 	#upvoteButton{
 		float:right;
@@ -25,9 +29,14 @@
 </style>
 
 <div id="mainPopup">
-		<span id="score" style="text-align:left;float:left;">Not 420</span>
+
+		<span id="score" style="text-align:left;float:left;"></span>
 
 			<script src="loadPoints.js"></script>
+
+			<div id="houseButton">
+					<img src="HouseIcon.png" id="houseIcon" height="45" width="45">
+			</div>
 
 		<div id="downvoteButton">
 			<!-- <button id="downVoteButton" type="button">Down Vote</button>  -->
@@ -38,7 +47,7 @@
 				<!--	<button id="upVoteButton" type="button">Up Vote</button> -->
 				<img src="upvote.png" id="upVoteImg" height="45" width="45">
 		</div>
-		
+
 </div>
 
 <style type="text/css">
