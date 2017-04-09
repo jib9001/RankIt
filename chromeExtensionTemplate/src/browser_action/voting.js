@@ -46,3 +46,20 @@ function boolToInt(booleanVar) {
   }
       return tempScore;
 }
+
+function getScore(){
+  var xhttp = new XMLHttpResponse();
+  xhttp.open("GET","http://phenom.servegame.com/RankIt/GetScore.php?domain"+getDomain(),true);
+  xhttp.onreadystatechange=function(){
+    document.getElementById('test').innerHTML= xhttp.responseText;
+  };
+  xhttp.send();
+}
+
+function getDomain(){
+  return window.domain.hostname;
+}
+
+window.onload = function(){
+  getScore();
+}
