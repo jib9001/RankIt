@@ -21,18 +21,24 @@ function upVote() {
     boolVote = null
   }
   */
-  var domain = getDomain();
+
+  getScore();
+
+  chrome.tabs.getSelected(null, function (tab) {
+  var url = new URL(tab.url);
+  var domain = url.hostname;
   var xhttp = new XMLHttpRequest();
-  xhttp.open("GET","http://phenom.servegame.com/RankIt/UpVote.php?domain=" + window.location.hostname,true);
+  xhttp.open("GET","http://phenom.servegame.com/RankIt/UpVote.php?domain=" + domain,true);
   xhttp.onreadystatechange=function(){
     score.innerHTML = xhttp.responseText;
   };
   xhttp.send();
-
+})
 
 }
 
 function downVote() {
+    /*
     if (boolVote == null){
       boolVote = false;
     }
@@ -40,7 +46,27 @@ function downVote() {
       boolVote = null;
     }
     score.innerHTML = boolToInt(boolVote);
+    */
+
+    getScore();
+
+    chrome.tabs.getSelected(null, function (tab) {
+    var url = new URL(tab.url);
+    var domain = url.hostname;
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("GET","http://phenom.servegame.com/RankIt/DownVote.php?domain=" + domain,true);
+    xhttp.onreadystatechange=function(){
+      score.innerHTML = xhttp.responseText;
+    };
+    xhttp.send();
+  })
 }
+
+chrome.tabs.getSelected(null, function (tab) {
+  var url = new URL(tab.url)
+  var domain = url.hostname
+  return domain;
+});
 
 function boolToInt(booleanVar) {
   switch (booleanVar) {
@@ -58,13 +84,16 @@ function boolToInt(booleanVar) {
 }
 
 function getScore(){
-  var domain = getDomain();
+  chrome.tabs.getSelected(null, function (tab) {
+  var url = new URL(tab.url);
+  var domain = url.hostname;
   var xhttp = new XMLHttpRequest();
-  xhttp.open("GET","http://phenom.servegame.com/RankIt/GetScore.php?domain=" + window.location.hostname,true);
+  xhttp.open("GET","http://phenom.servegame.com/RankIt/GetScore.php?domain=" + domain,true);
   xhttp.onreadystatechange=function(){
     console.log(xhttp.responseText);
   };
   xhttp.send();
+})
 }
 
 function getDomain(){
