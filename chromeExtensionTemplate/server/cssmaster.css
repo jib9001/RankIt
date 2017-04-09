@@ -33,6 +33,7 @@ nav a:hover{
   background-color: #BBDEFB;
 }
 h1{
+  text-align: center;
   padding-left: 14px;
   padding-top: 24px;
   font-family: "Roboto", regular, sans-serif;
@@ -54,6 +55,14 @@ span{
   margin: auto;
   width: 80%;
   min-height: 100vh;
+}
+#pdiv p{
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  width: 90%;
+  height: 90%;
+
 }
 #navbar{
   margin: auto;
