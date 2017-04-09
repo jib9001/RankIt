@@ -4,6 +4,7 @@
 //     "sample_setting": "This is how you use Store.js to remember values"
 // });
 
+var i = "brad";
 
 //example of using a message handler from the inject scripts
 chrome.extension.onMessage.addListener(
@@ -17,15 +18,9 @@ window.onload = function() {
   UpdateBadge();
 }
 
-var test = parseint(4000000);
-var testsub = test.substring(0, 1);
-var string = "string";
-//var tabId = sender.tab
 
 function UpdateBadge(){
   //chrome.browserAction.setBadgeText({text: '125456789'.substring(0,4)});
-  chrome.browserAction.setBadgeText({text: "testsub" });
-
-
+  chrome.browserAction.setBadgeText({text: i.toString() });
    //chrome.browserAction.setBadgeBackGroundColor({color:[255, 0, 0, 255] });
  }
