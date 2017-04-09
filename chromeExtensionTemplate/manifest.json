@@ -5,9 +5,9 @@
   "description": "Open Crowd Based Data Metrics",
   "homepage_url": "http://RankIt.net",
   "icons": {
-    "16": "icons/iconfinal.gif",
-    "48": "icons/icon48.png",
-    "128": "icons/icon128.png"
+    "16": "icons/PhenomP_16.png",
+    "48": "icons/PhenomP_48.png",
+    "128": "icons/PhenomP_128.png"
   },
   "default_locale": "en",
   "background": {
@@ -18,7 +18,7 @@
   },
   "options_page": "src/options_custom/index.html",
   "browser_action": {
-    "default_icon": "icons/iconfinal.gif",
+    "default_icon": "icons/PhenomP_16.png",
     "default_title": "browser action demo",
     "default_popup": "src/browser_action/browser_action.html"
   },
