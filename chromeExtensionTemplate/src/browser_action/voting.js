@@ -22,12 +22,12 @@ function upVote() {
 if(!upVoted && !downVoted)
 {
   upVoted = true;
-  function dbUpVote();
+  dbUpVote();
 }
 else if(!upVoted && downVoted)
 {
   downVoted = false;
-  function dbUpVote();
+  dbUpVote();
 }
 
 }
@@ -43,7 +43,7 @@ function dbUpVote()
     score.innerHTML = xhttp.responseText;
   };
   xhttp.send();
-})
+});
 }
 
 function downVote() {
@@ -51,12 +51,12 @@ function downVote() {
   if(!upVoted && !downVoted)
   {
     downVoted = true;
-    function dbUpVote();
+    dbDownVote();
   }
   else if(upVoted && !downVoted)
   {
     upVoted = false;
-    function dbUpVote();
+    dbDownVote();
   }
 
 }
@@ -75,7 +75,7 @@ function dbDownVote()
 })
 }
       //return parseInt(databaseScore,10) + tempScore;
-}
+
 
 function getScore(){
   chrome.tabs.getSelected(null, function (tab) {
