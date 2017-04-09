@@ -18,7 +18,7 @@ downVoteImg.addEventListener("click", downVote);
 houseImg.addEventListener("click", housePress);
 
 function housePress(){
-  window.open('http://www.google,com/', '_blank')
+  window.open('http://www.google,com/', '_blank');
 }
 
 function upVote() {
