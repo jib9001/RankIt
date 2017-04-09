@@ -28,6 +28,7 @@
     "management",
     "notifications",
     "tabs",
+    "storage",
     "https://*/* "
   ],
   "content_scripts": [
