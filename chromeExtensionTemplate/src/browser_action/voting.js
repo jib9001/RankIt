@@ -95,6 +95,7 @@ function getScore(){
   xhttp.open("GET","http://phenom.servegame.com/RankIt/GetScore.php?domain=" + domain,true);
   xhttp.onreadystatechange=function(){
   databaseScore = xhttp.responseText;
+  score.innerHTML = xhttp.responseText;
   };
   xhttp.send();
 })
