@@ -5,9 +5,9 @@
  * Date: 4/8/2017
  * Time: 5:23 PM
  */
-UpVote();
+DownVote();
 
-function UpVote()
+function DownVote()
 {
     if (isset($_GET['domain'])/* && isset($_GET['browserAgent'])*/) {
         $domain = $_GET['domain'];
@@ -25,19 +25,19 @@ function UpVote()
         }
 
 
-        $query = "SELECT UpVotes FROM t_site WHERE SiteID = " . $id;
+        $query = "SELECT DownVotes FROM t_site WHERE SiteID = " . $id;
         $result = mysqli_query($db, $query);
         $row = $result->fetch_result();
-        $upVotes = $row[0];
+        $downVotes = $row[0];
 
-        $upVotes += 1;
+        $downVotes += 1;
 
-        $query = "UPDATE t_site SET UpVotes = " . $upVotes;
+        $query = "UPDATE t_site SET DownVotes = " . $downVotes;
 
         mysqli_query($db, $query);
 
-        $updatedUpVotes = array('UpVotes'=>$upVotes);
+        $updatedDownVotes = array ('DownVotes'=>$downVotes);
 
-        echo json_encode($updatedUpVotes);
+        echo json_encode($updatedDownVotes);
     }
 }
