@@ -2,28 +2,48 @@
 <style type="text/css">
 	#mainPopup {
 		padding: 10px;
-		height: 100px;
-		width: 100px;
+		height: 50px;
+		width: 200px;
 		font-family: Helvetica, Ubuntu, Arial, sans-serif;
-
+	}
+	#container {
+	}
+	#upvoteButton{
+		float:right;
+		display: inline-block;
+	}
+	#downvoteButton{
+				display: inline-block;
+				float:right;
+	}
+	span{
+		font-size: 4em;
 	}
 	h1 {
-		font-size: 2em;
+		font-size: 4em;
 	}
 </style>
 
 <div id="mainPopup">
-	<h1 id="score"></h1>
-		<script src="loadPoints.js"></script>
-	<h1 id="test"></h1>
+		<span id="score" style="text-align:left;float:left;">420</span>
 
-	<div id="upvoteButton">
-			<button id="upVoteButton" type="button">Up Vote</button>
-	</div>
+			<script src="loadPoints.js"></script>
 
-	<div id="downvoteButton">
-			<button id="downVoteButton" type="button">Down Vote</button>
+		<div id="upvoteButton">
+			<!--	<button id="upVoteButton" type="button">Up Vote</button> -->
+				<img src="upvote.png" id="upVoteImg" height="45" width="45">
+		</div>
+
+		<div id="downvoteButton">
+			<!-- <button id="downVoteButton" type="button">Down Vote</button>  -->
+				<img src="downvote.png" id="upVoteImg" height="45" width="45">
+
 	</div>
 </div>
+
+<style type="text/css">
+
+</style>
+
 <script src="voting.js"></script>
 <script src="../bg/background.js"> </script>
