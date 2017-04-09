@@ -8,11 +8,11 @@ getScore();
 
 //score.innerHTML = tempScore;
 
-var upVoteButton = document.getElementById("upVoteButton");
-var downVoteButton = document.getElementById("downVoteButton");
+var upVoteImg= document.getElementById("upVoteImg");
+var downVoteImg = document.getElementById("downVoteImg");
 
-upVoteButton.addEventListener("click", upVote);
-downVoteButton.addEventListener("click", downVote);
+upVoteImg.addEventListener("click", upVote);
+downVoteImg.addEventListener("click", downVote);
 
 
 function upVote() {
@@ -95,7 +95,6 @@ function getScore(){
   xhttp.open("GET","http://phenom.servegame.com/RankIt/GetScore.php?domain=" + domain,true);
   xhttp.onreadystatechange=function(){
   databaseScore = xhttp.responseText;
-  score.innerHTML = xhttp.responseText;
   };
   xhttp.send();
 })
