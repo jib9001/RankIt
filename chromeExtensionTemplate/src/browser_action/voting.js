@@ -104,6 +104,5 @@ function getDomain(){
 }
 
 window.onload = function(){
-  alert("loaded");
   getScore();
 }
