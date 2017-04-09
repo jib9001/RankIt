@@ -38,6 +38,8 @@ function UpVote()
 
         $updatedUpVotes = array('UpVotes'=>$upVotes);
 
+        header('Content-type: application/json');
+        header("Access-Control-Allow-Origin: *");
         echo json_encode($updatedUpVotes);
     }
 }
