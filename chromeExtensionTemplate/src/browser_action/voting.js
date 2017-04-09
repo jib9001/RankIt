@@ -13,13 +13,23 @@ upVoteButton.addEventListener("click", upVote);
 downVoteButton.addEventListener("click", downVote);
 
 function upVote() {
+  /*
   if (boolVote == null){
     boolVote = true;
   }
   if (boolVote == false){
     boolVote = null
   }
-  score.innerHTML = boolToInt(boolVote);
+  */
+  var domain = getDomain();
+  var xhttp = new XMLHttpRequest();
+  xhttp.open("GET","http://phenom.servegame.com/RankIt/UpVote.php?domain=" + window.location.hostname,true);
+  xhttp.onreadystatechange=function(){
+    score.innerHTML = xhttp.responseText;
+  };
+  xhttp.send();
+
+
 }
 
 function downVote() {
