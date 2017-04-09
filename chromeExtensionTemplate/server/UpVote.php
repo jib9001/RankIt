@@ -11,7 +11,7 @@ function UpVote()
 {
     if (isset($_GET['domain'])/* && isset($_GET['browserAgent'])*/) {
         $domain = $_GET['domain'];
-        $db = mysqli_connect($db = mysqli_connect("localhost", "root", "P@ssword", "rankit"));
+        $db = mysqli_connect("localhost", "root", "P@ssword", "rankit");
 
         $query = "SELECT SiteID FROM t_site WHERE Domain = '" . $domain . "'";
 
@@ -20,14 +20,14 @@ function UpVote()
         $id = 0;
 
         if ($result->num_rows > 0) {
-            $row = $result->fetch_result();
+            $row = $result->fetch_row();
             $id = $row[0];
         }
 
 
         $query = "SELECT UpVotes FROM t_site WHERE SiteID = " . $id;
         $result = mysqli_query($db, $query);
-        $row = $result->fetch_result();
+        $row = $result->fetch_row();
         $upVotes = $row[0];
 
         $upVotes += 1;

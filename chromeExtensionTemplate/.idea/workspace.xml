@@ -15,47 +15,47 @@
       <file leaf-file-name="UpVote.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/UpVote.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="40" column="42" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="42" />
+            <state relative-caret-position="561">
+              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding>
-                <marker date="1491699157652" expanded="true" signature="338:378" ph="SELECT SiteI... t_site" />
-                <marker date="1491699157652" expanded="true" signature="338:379" ph="SELECT SiteI... t_site" />
-                <marker date="1491699157652" expanded="true" signature="338:380" ph="SELECT SiteI... t_site" />
-                <marker date="1491699157652" expanded="true" signature="338:396" ph="SELECT SiteI... t_site" />
-                <marker date="1491699157652" expanded="true" signature="338:397" ph="SELECT SiteI... t_site" />
-                <marker date="1491699157652" expanded="true" signature="602:643" ph="SELECT UpVot... t_site" />
-                <marker date="1491699157652" expanded="true" signature="602:644" ph="SELECT UpVot... t_site" />
-                <marker date="1491699157652" expanded="true" signature="809:836" ph="UPDATE t_sit... " />
-                <marker date="1491699157652" expanded="true" signature="809:837" ph="UPDATE t_sit... " />
+                <marker date="1491701009395" expanded="true" signature="316:356" ph="SELECT SiteI... t_site" />
+                <marker date="1491701009395" expanded="true" signature="316:357" ph="SELECT SiteI... t_site" />
+                <marker date="1491701009395" expanded="true" signature="316:358" ph="SELECT SiteI... t_site" />
+                <marker date="1491701009395" expanded="true" signature="316:374" ph="SELECT SiteI... t_site" />
+                <marker date="1491701009395" expanded="true" signature="316:375" ph="SELECT SiteI... t_site" />
+                <marker date="1491701009395" expanded="true" signature="577:618" ph="SELECT UpVot... t_site" />
+                <marker date="1491701009395" expanded="true" signature="577:619" ph="SELECT UpVot... t_site" />
+                <marker date="1491701009395" expanded="true" signature="781:808" ph="UPDATE t_sit... " />
+                <marker date="1491701009395" expanded="true" signature="781:809" ph="UPDATE t_sit... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DownVote.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DownVote.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/DownVote.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="38" column="60" lean-forward="false" selection-start-line="38" selection-start-column="60" selection-end-line="38" selection-end-column="60" />
+            <state relative-caret-position="229">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
-                <marker date="1491699157754" expanded="true" signature="342:400" ph="SELECT SiteI... t_site" />
-                <marker date="1491699157754" expanded="true" signature="606:650" ph="SELECT DownV... t_site" />
-                <marker date="1491699157754" expanded="true" signature="819:849" ph="UPDATE t_sit... " />
+                <marker date="1491701011553" expanded="true" signature="320:378" ph="SELECT SiteI... t_site" />
+                <marker date="1491701011553" expanded="true" signature="581:625" ph="SELECT DownV... t_site" />
+                <marker date="1491701011553" expanded="true" signature="791:821" ph="UPDATE t_sit... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GetScore.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GetScore.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/GetScore.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+            <state relative-caret-position="255">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
-                <marker date="1491698976474" expanded="true" signature="307:365" ph="SELECT SiteI... t_site" />
-                <marker date="1491698976474" expanded="true" signature="603:682" ph="INSERT INTO t_site... " />
-                <marker date="1491698976474" expanded="true" signature="805:857" ph="SELECT UpVot... t_site" />
-                <marker date="1491698976474" expanded="true" signature="805:858" ph="SELECT UpVot... t_site" />
+                <marker date="1491700292303" expanded="true" signature="285:343" ph="SELECT SiteI... t_site" />
+                <marker date="1491700292303" expanded="true" signature="555:634" ph="INSERT INTO t_site... " />
+                <marker date="1491700292303" expanded="true" signature="731:783" ph="SELECT UpVot... t_site" />
+                <marker date="1491700292303" expanded="true" signature="731:784" ph="SELECT UpVot... t_site" />
               </folding>
             </state>
           </provider>
@@ -65,11 +65,13 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>lighning.servegame.com</find>
       <find>lightning.servegame.com</find>
+      <find>lighning.servegame.com</find>
+      <find>fetch_result</find>
     </findStrings>
     <replaceStrings>
       <replace>localhost</replace>
+      <replace>fetch_row</replace>
     </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -243,7 +245,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12701000" />
+    <option name="totallyTimeSpent" value="14546000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1374" height="739" extended-state="6" />
@@ -295,45 +297,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/GetScore.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-          <folding>
-            <marker date="1491698976474" expanded="true" signature="307:365" ph="SELECT SiteI... t_site" />
-            <marker date="1491698976474" expanded="true" signature="603:682" ph="INSERT INTO t_site... " />
-            <marker date="1491698976474" expanded="true" signature="805:857" ph="SELECT UpVot... t_site" />
-            <marker date="1491698976474" expanded="true" signature="805:858" ph="SELECT UpVot... t_site" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/UpVote.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="40" column="42" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="42" />
+        <state relative-caret-position="561">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding>
-            <marker date="1491699157652" expanded="true" signature="338:378" ph="SELECT SiteI... t_site" />
-            <marker date="1491699157652" expanded="true" signature="338:379" ph="SELECT SiteI... t_site" />
-            <marker date="1491699157652" expanded="true" signature="338:380" ph="SELECT SiteI... t_site" />
-            <marker date="1491699157652" expanded="true" signature="338:396" ph="SELECT SiteI... t_site" />
-            <marker date="1491699157652" expanded="true" signature="338:397" ph="SELECT SiteI... t_site" />
-            <marker date="1491699157652" expanded="true" signature="602:643" ph="SELECT UpVot... t_site" />
-            <marker date="1491699157652" expanded="true" signature="602:644" ph="SELECT UpVot... t_site" />
-            <marker date="1491699157652" expanded="true" signature="809:836" ph="UPDATE t_sit... " />
-            <marker date="1491699157652" expanded="true" signature="809:837" ph="UPDATE t_sit... " />
+            <marker date="1491701009395" expanded="true" signature="316:356" ph="SELECT SiteI... t_site" />
+            <marker date="1491701009395" expanded="true" signature="316:357" ph="SELECT SiteI... t_site" />
+            <marker date="1491701009395" expanded="true" signature="316:358" ph="SELECT SiteI... t_site" />
+            <marker date="1491701009395" expanded="true" signature="316:374" ph="SELECT SiteI... t_site" />
+            <marker date="1491701009395" expanded="true" signature="316:375" ph="SELECT SiteI... t_site" />
+            <marker date="1491701009395" expanded="true" signature="577:618" ph="SELECT UpVot... t_site" />
+            <marker date="1491701009395" expanded="true" signature="577:619" ph="SELECT UpVot... t_site" />
+            <marker date="1491701009395" expanded="true" signature="781:808" ph="UPDATE t_sit... " />
+            <marker date="1491701009395" expanded="true" signature="781:809" ph="UPDATE t_sit... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/DownVote.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="38" column="60" lean-forward="false" selection-start-line="38" selection-start-column="60" selection-end-line="38" selection-end-column="60" />
+        <state relative-caret-position="229">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
-            <marker date="1491699157754" expanded="true" signature="342:400" ph="SELECT SiteI... t_site" />
-            <marker date="1491699157754" expanded="true" signature="606:650" ph="SELECT DownV... t_site" />
-            <marker date="1491699157754" expanded="true" signature="819:849" ph="UPDATE t_sit... " />
+            <marker date="1491701011553" expanded="true" signature="320:378" ph="SELECT SiteI... t_site" />
+            <marker date="1491701011553" expanded="true" signature="581:625" ph="SELECT DownV... t_site" />
+            <marker date="1491701011553" expanded="true" signature="791:821" ph="UPDATE t_sit... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/GetScore.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <marker date="1491700292303" expanded="true" signature="285:343" ph="SELECT SiteI... t_site" />
+            <marker date="1491700292303" expanded="true" signature="555:634" ph="INSERT INTO t_site... " />
+            <marker date="1491700292303" expanded="true" signature="731:783" ph="SELECT UpVot... t_site" />
+            <marker date="1491700292303" expanded="true" signature="731:784" ph="SELECT UpVot... t_site" />
           </folding>
         </state>
       </provider>
