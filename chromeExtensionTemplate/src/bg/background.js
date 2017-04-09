@@ -26,16 +26,16 @@ points = points.toString();//changing points to string
 var pointString = points;//initalzing string pointString
 UpdateBadge(pointString);
 
-/*
+
 if(points.length > 9){//if number is really big, default 999m+
   pointString = "999m+";
   console.log("this is broken");
 }//end if
 
-else{/*///if its less than 9 characters find printout
+else{//if its less than 9 characters find printout
 
 
-/*switch (points.length){//switch statement
+switch (points.length){//switch statement
 
   default:
   pointString = points;
@@ -60,8 +60,8 @@ else{/*///if its less than 9 characters find printout
     UpdateBadge(pointString);
 
 }//end switch
-//}//end else
-*/
+}//end else
+
 }
 window.onload = function() {
   getScore();
