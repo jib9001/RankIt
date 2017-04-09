@@ -1,18 +1,19 @@
 var score = document.getElementById('score');
-var databaseScore = 0;
+var databaseScore;
     //Call database for score
 var tempScore = 0;
 var boolVote = null;
 
 getScore();
 
-score.innerHTML = tempScore;
+//score.innerHTML = tempScore;
 
 var upVoteButton = document.getElementById("upVoteButton");
 var downVoteButton = document.getElementById("downVoteButton");
 
 upVoteButton.addEventListener("click", upVote);
 downVoteButton.addEventListener("click", downVote);
+
 
 function upVote() {
 
@@ -83,7 +84,7 @@ function boolToInt(booleanVar) {
       tempScore = -1;
       break;
   }
-      return databaseScore + tempScore;
+      return parseInt(databaseScore,10) + tempScore;
 }
 
 function getScore(){
