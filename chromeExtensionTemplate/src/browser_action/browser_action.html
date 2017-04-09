@@ -2,8 +2,8 @@
 <style type="text/css">
 	#mainPopup {
 		padding: 10px;
-		height: 200px;
-		width: 400px;
+		height: 100px;
+		width: 100px;
 		font-family: Helvetica, Ubuntu, Arial, sans-serif;
 	}
 	h1 {
@@ -12,7 +12,17 @@
 </style>
 
 <div id="mainPopup">
-<h1>Hello extensionizr!</h1>
-<p>To shut this popup down, edit the manifest file and remove the "default popup" key. To edit it, just edit ext/browser_action/browser_action.html. The CSS is there, too.</p>
+	<h1 id="score">Score</h1>
+
+
+	<div id="upvoteButton">
+			<button id="upVoteButton" type="button">Up Vote</button>
+	</div>
+
+	<div id="downvoteButton">
+			<button id="downVoteButton" type="button">Down Vote</button>
+	</div>
 </div>
+<script src="voting.js"></script>
+<script src=".../bg/background.js"></script>
 <script src="../bg/background.js"> </script>
