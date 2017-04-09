@@ -35,7 +35,7 @@ function DownVote()
 
         $score = $upVotes - $downVotes;
 
-        $query = "UPDATE t_site SET DownVotes = " . $downVotes;
+        $query = "UPDATE t_site SET DownVotes = " . $downVotes . "WHERE SiteID = ". $id;
 
         mysqli_query($db, $query);
 
