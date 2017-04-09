@@ -65,9 +65,14 @@ switch (points.length){//switch statement
 }
 window.onload = function() {
   getScore();
+  ChangeColor();
 }//end window.onload
 
 
 function UpdateBadge(pointString){
   chrome.browserAction.setBadgeText({text: pointString.toString() });
 }//end UpdateBadge
+
+function ChangeColor(){
+  chrome.browserAction.setBadgeBackgroundColor({color: '#008D23'});
+}
