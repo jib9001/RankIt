@@ -1,48 +1,99 @@
 var score = document.getElementById('score');
-var databaseScore = 0;
+var databaseScore;
     //Call database for score
 var tempScore = 0;
 var boolVote = null;
 
-score.innerHTML = tempScore;
+var upVoted = false;
+var downVoted = false;
 
-var upVoteButton = document.getElementById("upVoteButton");
-var downVoteButton = document.getElementById("downVoteButton");
+getScore();
 
-upVoteButton.addEventListener("click", upVote);
-downVoteButton.addEventListener("click", downVote);
+//score.innerHTML = tempScore;
+
+var upVoteImg= document.getElementById("upVoteImg");
+var downVoteImg = document.getElementById("downVoteImg");
+
+upVoteImg.addEventListener("click", upVote);
+downVoteImg.addEventListener("click", downVote);
+
 
 function upVote() {
-  if (boolVote == null){
-    boolVote = true;
-  }
-  if (boolVote == false){
-    boolVote = null
-  }
-  score.innerHTML = boolToInt(boolVote);
+if(!upVoted && !downVoted)
+{
+  upVoted = true;
+  dbUpVote();
+}
+else if(!upVoted && downVoted)
+{
+  downVoted = false;
+  dbUpVote();
+}
+
+}
+
+function dbUpVote()
+{
+  chrome.tabs.getSelected(null, function (tab) {
+  var url = new URL(tab.url);
+  var domain = url.hostname;
+  var xhttp = new XMLHttpRequest();
+  xhttp.open("GET","http://phenom.servegame.com/RankIt/UpVote.php?domain=" + domain,true);
+  xhttp.onreadystatechange=function(){
+    score.innerHTML = xhttp.responseText;
+  };
+  xhttp.send();
+});
 }
 
 function downVote() {
-    if (boolVote == null){
-      boolVote = false;
-    }
-    if (boolVote == true){
-      boolVote = null;
-    }
-    score.innerHTML = boolToInt(boolVote);
+
+  if(!upVoted && !downVoted)
+  {
+    downVoted = true;
+    dbDownVote();
+  }
+  else if(upVoted && !downVoted)
+  {
+    upVoted = false;
+    dbDownVote();
+  }
+
 }
 
-function boolToInt(booleanVar) {
-  switch (booleanVar) {
-    case true:
-      tempScore = 1;
-      break;
-    case null:
-      tempScore = 0;
-      break;
-    case false:
-      tempScore = -1;
-      break;
-  }
-      return tempScore;
+function dbDownVote()
+{
+  chrome.tabs.getSelected(null, function (tab) {
+  var url = new URL(tab.url);
+  var domain = url.hostname;
+  var xhttp = new XMLHttpRequest();
+  xhttp.open("GET","http://phenom.servegame.com/RankIt/DownVote.php?domain=" + domain,true);
+  xhttp.onreadystatechange=function(){
+    score.innerHTML = xhttp.responseText;
+  };
+  xhttp.send();
+})
+}
+      //return parseInt(databaseScore,10) + tempScore;
+
+
+function getScore(){
+  chrome.tabs.getSelected(null, function (tab) {
+  var url = new URL(tab.url);
+  var domain = url.hostname;
+  var xhttp = new XMLHttpRequest();
+  xhttp.open("GET","http://phenom.servegame.com/RankIt/GetScore.php?domain=" + domain,true);
+  xhttp.onreadystatechange=function(){
+  databaseScore = xhttp.responseText;
+  };
+  xhttp.send();
+})
+}
+
+function getDomain(){
+  return window.location.hostname;
+}
+
+window.onload = function(){
+  getScore();
 }

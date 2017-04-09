@@ -25,14 +25,17 @@ function DownVote()
         }
 
 
-        $query = "SELECT DownVotes FROM t_site WHERE SiteID = " . $id;
+        $query = "SELECT DownVotes, UpVotes FROM t_site WHERE SiteID = " . $id;
         $result = mysqli_query($db, $query);
         $row = $result->fetch_row();
         $downVotes = $row[0];
+        $upVotes = $row[1];
 
         $downVotes += 1;
 
-        $query = "UPDATE t_site SET DownVotes = " . $downVotes;
+        $score = $upVotes - $downVotes;
+
+        $query = "UPDATE t_site SET DownVotes = " . $downVotes . " WHERE SiteID = ". $id;
 
         mysqli_query($db, $query);
 
@@ -40,6 +43,6 @@ function DownVote()
 
         header('Content-type: application/json');
         header("Access-Control-Allow-Origin: *");
-        echo json_encode($updatedDownVotes);
+        echo $score;
     }
 }

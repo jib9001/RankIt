@@ -33,14 +33,19 @@ function GetScore()
 
         $query = "SELECT UpVotes, DownVotes FROM t_site WHERE SiteID = " . $id;
         $result = mysqli_query($db, $query);
-        $json = array();
+        /*$json = array();
         while ($row = mysqli_fetch_assoc($result)) {
             $json[] = $row;
-        }
+        }*/
+        $row = $result->fetch_row();
 
+        $upVotes = $row[0];
+        $downVotes = $row[1];
+
+        $score = $upVotes - $downVotes;
         header('Content-type: application/json');
         header("Access-Control-Allow-Origin: *");
-        echo json_encode(array('data' => $json));
+        echo ($score);
 
     }
 }
