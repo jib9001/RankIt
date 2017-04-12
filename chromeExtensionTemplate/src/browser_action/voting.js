@@ -1,8 +1,8 @@
 var score = document.getElementById('score');
 var databaseScore;
     //Call database for score
-var tempScore = 0;
-var boolVote = null;
+    var upVoted = false;
+    var downVoted = false;
 
 getScore();
 
@@ -22,19 +22,23 @@ function housePress(){
 }
 
 function upVote() {
+if(!upVoted && !downVoted)
+{
+  upVoted = true;
+  document.getElementById("upVoteImg").src="upVoteGreen.png";
+  dbUpVote();
+}
+else if(!upVoted && downVoted)
+{
+  downVoted = false;
+  document.getElementById("upVoteImg").src="upvote.png";
+  document.getElementById("downVoteImg").src="downvote.png";
+  dbUpVote();
+}
+}
 
-  if (boolVote == null){
-    boolVote = true;
-  }
-  if (boolVote == false){
-    boolVote = null
-  }
-    score.innerHTML = boolToInt(boolVote);
-
-
-
-  //getScore();
-/*
+function dbUpVote()
+{
   chrome.tabs.getSelected(null, function (tab) {
   var url = new URL(tab.url);
   var domain = url.hostname;
@@ -44,34 +48,40 @@ function upVote() {
     score.innerHTML = xhttp.responseText;
   };
   xhttp.send();
-})
-*/
+});
 }
 
 function downVote() {
 
-    if (boolVote == null){
-      boolVote = false;
-    }
-    if (boolVote == true){
-      boolVote = null;
-    }
-    score.innerHTML = boolToInt(boolVote);
+  if(!upVoted && !downVoted)
+  {
+    downVoted = true;
+    document.getElementById("downVoteImg").src="downVoteRed.png";
+    dbDownVote();
+  }
+  else if(upVoted && !downVoted)
+  {
+    upVoted = false;
+    document.getElementById("upVoteImg").src="upvote.png";
+    document.getElementById("downVoteImg").src="downvote.png";
+    dbDownVote();
+  }
+
+}
 
 
-    //getScore();
-/*
-    chrome.tabs.getSelected(null, function (tab) {
-    var url = new URL(tab.url);
-    var domain = url.hostname;
-    var xhttp = new XMLHttpRequest();
-    xhttp.open("GET","http://phenom.servegame.com/RankIt/DownVote.php?domain=" + domain,true);
-    xhttp.onreadystatechange=function(){
-      score.innerHTML = xhttp.responseText;
-    };
-    xhttp.send();
-  })
-  */
+function dbDownVote()
+{
+  chrome.tabs.getSelected(null, function (tab) {
+  var url = new URL(tab.url);
+  var domain = url.hostname;
+  var xhttp = new XMLHttpRequest();
+  xhttp.open("GET","http://phenom.servegame.com/RankIt/DownVote.php?domain=" + domain,true);
+  xhttp.onreadystatechange=function(){
+    score.innerHTML = xhttp.responseText;
+  };
+  xhttp.send();
+})
 }
 
 chrome.tabs.getSelected(null, function (tab) {
@@ -80,25 +90,6 @@ chrome.tabs.getSelected(null, function (tab) {
   return domain;
 });
 
-function boolToInt(booleanVar) {
-  switch (booleanVar) {
-    case true:
-      tempScore = 1;
-      document.getElementById("upVoteImg").src="upVoteGreen.png";
-      break;
-    case null:
-      tempScore = 0;
-      document.getElementById("upVoteImg").src="upvote.png";
-      document.getElementById("downVoteImg").src="downvote.png";
-
-      break;
-    case false:
-      tempScore = -1;
-      document.getElementById("downVoteImg").src="downVoteRed.png";
-      break;
-  }
-      return parseInt(databaseScore,10) + tempScore;
-}
 
 function getScore(){
   chrome.tabs.getSelected(null, function (tab) {
